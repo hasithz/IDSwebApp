@@ -2,10 +2,7 @@ from flask import Flask
 import tensorflow as tf 
 import numpy as np
 
-
-
 new_model = tf.keras.models.load_model('save_model')
-
 
 #input sample data to check prediction
 sample = {
@@ -53,7 +50,6 @@ sample = {
 #     'results'            : 0,
 }
 
-
 #predicted output
 def pre():
   # convertig the sample into tensors
@@ -72,6 +68,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
+    print("deploying")
     # return "Hello, hello hellooooooo World!"
     return asd
 
