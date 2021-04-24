@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'idssys1'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_4a1e665d089448f1b29524158121bec1 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_fc07dd831b5b46f8a0096eda6577f2f2 }}
